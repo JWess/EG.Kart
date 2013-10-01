@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace EG.Kart.Presentation.Web
+namespace EG.Kart.Presentation.Web.App_Start
 {
     public class RouteConfig
     {

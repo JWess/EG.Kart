@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace EG.Kart
+namespace EG.Kart.Presentation.Web.App_Start
 {
     public class FilterConfig
     {

@@ -16,6 +16,8 @@ namespace EG.Kart.Presentation.Web
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(System.Web.Optimization.BundleTable.Bundles);
+            RouteNavigationConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }
