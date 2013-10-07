@@ -5,8 +5,6 @@ using EG.Kart.Presentation.Web.App_Start;
 
 namespace EG.Kart.Presentation.Web
 {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-    // visit http://go.microsoft.com/?LinkId=9394801
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
@@ -18,6 +16,7 @@ namespace EG.Kart.Presentation.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(System.Web.Optimization.BundleTable.Bundles);
             RouteNavigationConfig.RegisterRoutes(RouteTable.Routes);
+            IocConfig.Configure();
         }
     }
 }

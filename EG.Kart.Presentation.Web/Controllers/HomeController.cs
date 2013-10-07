@@ -1,16 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using EG.Kart.Data;
+using EG.Kart.Domain;
 using Models;
 
 namespace EG.Kart.Presentation.Web.Controllers
 {
     public class HomeController : BootstrapBaseController
     {
-        private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();
+        private readonly List<HomeInputModel> _models;
+
+        public HomeController()
+        {
+            _models = ModelIntializer.CreateFakeHomeInputModels();
+        }
+
         public ActionResult Index()
         {
-           
             var homeInputModels = _models;                                      
             return View(homeInputModels);
         }
@@ -44,11 +51,13 @@ namespace EG.Kart.Presentation.Web.Controllers
             }
             return RedirectToAction("index");
         }
+
         public ActionResult Edit(int id)
         {
             var model = _models.Get(id);
             return View("Create", model);
         }
+
         [HttpPost]        
         public ActionResult Edit(HomeInputModel model,int id)
         {

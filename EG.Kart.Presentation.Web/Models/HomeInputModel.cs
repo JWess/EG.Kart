@@ -24,7 +24,7 @@ namespace Models
 
     public static class ModelIntializer
     {
-        public static List<HomeInputModel> CreateHomeInputModels()
+        public static List<HomeInputModel> CreateFakeHomeInputModels()
         {
             return new List<HomeInputModel>
                        {
