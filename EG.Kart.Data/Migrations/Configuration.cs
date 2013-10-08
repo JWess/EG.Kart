@@ -47,9 +47,9 @@ namespace EG.Kart.Data.Migrations
                     "Waluigi Stadium",
                     "Wario's Gold Mine",
                     "Yoshi Falls"
-                }.Select(x => new Race {Trackname = x}).ToList();
+                }.Select(x => new Track {Name = x}).ToList();
             
-            context.Set<Race>().AddOrUpdate(x => x.Trackname, tracks.ToArray());
+            context.Set<Track>().AddOrUpdate(x => x.Name, tracks.ToArray());
         }
     }
 }

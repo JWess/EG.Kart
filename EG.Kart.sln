@@ -6,6 +6,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{324283FD-6975-477B-884A-455021888201}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EG.Kart.Presentation.Web", "EG.Kart.Presentation.Web\EG.Kart.Presentation.Web.csproj", "{BAFFEA7E-8ED5-4440-B1C6-F20439C1AC5D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{85780551-003F-4EE0-8DC3-655A60DC1FF3} = {85780551-003F-4EE0-8DC3-655A60DC1FF3}
+		{F93BA07A-5101-4F22-B061-7A398183E8ED} = {F93BA07A-5101-4F22-B061-7A398183E8ED}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EG.Kart.Presentaion.Tests", "EG.Kart.Presentation.Web.Tests\EG.Kart.Presentaion.Tests.csproj", "{15B958A5-0208-42E7-A208-20736C5527DC}"
 EndProject
@@ -17,6 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AACAB3
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EG.Kart.Data", "EG.Kart.Data\EG.Kart.Data.csproj", "{85780551-003F-4EE0-8DC3-655A60DC1FF3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F93BA07A-5101-4F22-B061-7A398183E8ED} = {F93BA07A-5101-4F22-B061-7A398183E8ED}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EG.Kart.Domain", "EG.Kart.Domain\EG.Kart.Domain.csproj", "{F93BA07A-5101-4F22-B061-7A398183E8ED}"
 EndProject

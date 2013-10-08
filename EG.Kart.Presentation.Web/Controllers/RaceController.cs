@@ -7,9 +7,9 @@ namespace EG.Kart.Presentation.Web.Controllers
 {
     public class RaceController : Controller
     {
-        private readonly IRepository<Race> _raceRepository;
+        private readonly IRepository<Track> _raceRepository;
 
-        public RaceController(IRepository<Race> raceRepository)
+        public RaceController(IRepository<Track> raceRepository)
         {
             _raceRepository = raceRepository;
         }
@@ -17,7 +17,7 @@ namespace EG.Kart.Presentation.Web.Controllers
         public ActionResult Index()
         {
             var races = _raceRepository.Query()
-            .Select(x => x.Trackname)
+            .Select(x => x.Name)
             .ToList();
             
             return View(races);
