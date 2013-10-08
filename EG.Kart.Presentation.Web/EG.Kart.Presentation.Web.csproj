@@ -139,7 +139,7 @@
     <Compile Include="Controllers\BootstrapBaseController.cs" />
     <Compile Include="Controllers\ExampleLayoutsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RaceController.cs" />
+    <Compile Include="Controllers\TrackController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +154,7 @@
     <Compile Include="Infrastructure\NavigationRoutes\NavigationRouteFilter.cs" />
     <Compile Include="Infrastructure\StructureMapControllerFactory.cs" />
     <Compile Include="Models\HomeInputModel.cs" />
+    <Compile Include="Models\TrackModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

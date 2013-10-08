@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContextFactory.cs" />
+    <Compile Include="EntityFrameworkUnitOfWork.cs" />
     <Compile Include="IBaseDbContext.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="KartDbBaseDbContext.cs" />

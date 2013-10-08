@@ -9,7 +9,7 @@ namespace EG.Kart.Data
     {
         IQueryable<TEntity> Query();
 
-        TEntity GetById(Guid id);
+        TEntity GetById(long id);
 
         void Create(TEntity entityToCreate);
         void Create(IList<TEntity> entitiesToCreate);
@@ -18,8 +18,8 @@ namespace EG.Kart.Data
         void Update(TEntity entityToUpdate, TEntity entityOnContext);
         void Update(IList<TEntity> entitiesToUpdate);
 
-        void Delete(Guid id);
-        void Delete(IList<Guid> ids);
+        void Delete(long id);
+        void Delete(IList<long> ids);
         void Delete(TEntity entityToDelete);
         void Delete(IList<TEntity> entitiesToDelete);
     }

@@ -14,6 +14,7 @@ namespace EG.Kart.Presentation.Web.App_Start
             {
                 x.For<IBaseDbContext>().Use<KartDbBaseDbContext>();
                 x.For<IContextFactory>().Use<ContextFactory>();
+                x.For<IUnitOfWork>().Use<EntityFrameworkUnitOfWork>();
                 
                 x.For(typeof(IRepository<>))
                     .HttpContextScoped()

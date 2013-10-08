@@ -36,7 +36,7 @@ namespace EG.Kart.Data
             return query;
         }
 
-        public TEntity GetById(Guid id)
+        public TEntity GetById(long id)
         {
             return DbSet.Find(id);
         }
@@ -72,13 +72,13 @@ namespace EG.Kart.Data
             }
         }
 
-        public void Delete(Guid id)
+        public void Delete(long id)
         {
             var entityToDelete = DbSet.Find(id);
             Delete(entityToDelete);
         }
 
-        public void Delete(IList<Guid> ids)
+        public void Delete(IList<long> ids)
         {
             foreach (var id in ids)
             {
