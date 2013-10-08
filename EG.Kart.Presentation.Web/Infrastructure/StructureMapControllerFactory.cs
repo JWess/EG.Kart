@@ -14,11 +14,9 @@ namespace EG.Kart.Presentation.Web.Infrastructure
                 var controllerType = base.GetControllerType(requestContext, controllerName);
                 return ObjectFactory.GetInstance(controllerType) as IController;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                System.Diagnostics.Debug.WriteLine(ex.ToString());
-                throw;
-                //return base.CreateController(requestContext, controllerName);
+                return base.CreateController(requestContext, controllerName);
             }
         }
     }

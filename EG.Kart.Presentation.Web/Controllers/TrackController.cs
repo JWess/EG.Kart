@@ -1,5 +1,7 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
+using AutoMapper;
 using EG.Kart.Data;
 using EG.Kart.Domain;
 using EG.Kart.Presentation.Web.Models;
@@ -19,9 +21,7 @@ namespace EG.Kart.Presentation.Web.Controllers
 
         public ActionResult Index()
         {
-            var races = _trackRepository.Query()
-            .Select(x => new TrackModel{Id = x.Id, Name = x.Name})
-            .ToList();
+            var races = Mapper.Map<IList<Track>, IList<TrackModel>>(  _trackRepository.Query().ToList() );
             
             return View(races);
         }

@@ -44,6 +44,12 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -147,6 +153,8 @@
     <Compile Include="Infrastructure\BootstrapSupport\ViewHelperExtensions.cs" />
     <Compile Include="Infrastructure\HtmlHelpers\GlyphIcons.cs" />
     <Compile Include="Infrastructure\HtmlHelpers\Paging.cs" />
+    <Compile Include="Infrastructure\Mapping\DomainMappingBuilder.cs" />
+    <Compile Include="Infrastructure\Mapping\TrackMap.cs" />
     <Compile Include="Infrastructure\NavigationRoutes\INavigationRouteFilter.cs" />
     <Compile Include="Infrastructure\NavigationRoutes\NamedRoute.cs" />
     <Compile Include="Infrastructure\NavigationRoutes\NavigationExtensions.cs" />

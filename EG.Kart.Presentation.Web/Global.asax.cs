@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 using EG.Kart.Presentation.Web.App_Start;
+using EG.Kart.Presentation.Web.Infrastructure.Mapping;
 
 namespace EG.Kart.Presentation.Web
 {
@@ -17,6 +18,7 @@ namespace EG.Kart.Presentation.Web
             BundleConfig.RegisterBundles(System.Web.Optimization.BundleTable.Bundles);
             RouteNavigationConfig.RegisterRoutes(RouteTable.Routes);
             IocConfig.Configure();
+            DomainMappingBuilder.CreateAutoMappings();
         }
     }
 }
